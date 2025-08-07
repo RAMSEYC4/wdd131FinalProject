@@ -8,11 +8,109 @@
   <meta name="author" content="Cedou Ramsey">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/largescreen-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Amazon sign in page</title>
 </head>
 
-<body>  
-  <script type="module" src="scripts/data.js"></script>
+<body>
+  <!--header start-->
+  <header>
+    <nav>
+      <div id="amazon-logo">
+        <img class="signin-logo" src="images/amazon-logo.png" alt="">
+      </div>
+      
+      <div id="location">
+        <p class="text-center">
+          <span class="">Delivery to Johannesburg</span>
+        </p>
+        <p class="text-center">
+          <i class="fa-solid fa-location-dot"></i>
+          Johannesburg
+        </p>
+      </div>
+
+      <div id="search-items">
+        <div>
+          <select name="" id="" class="select-items">
+            <option value="value1" selected>Toys and games </option>
+            <option value="value1" selected>Toys and games </option>
+          </select>
+        </div>
+        <div>
+          <input type="text" class="search-bar-area" placeholder="search Amazon.co.za">
+        </div>
+        <div class="search-icons center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div id="sign-in">
+        <a href="html/sign-in.html">
+          <p class="text-center">Hello, sign in</p>
+        </a>
+        <p class="text-center">Acount List</p>
+      </div>
+      <div id="cart" class="center ">
+        <div class="cart-inner-container">
+          <img src="images/icons/cart-icon.png" class="cart" alt="">
+        </div>
+        <a href="html/orders.html">
+          <p class="text-center">basket</p>
+        </a>
+        <div class="cart-number">
+          <p class="cart-items-number">20</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--header end-->
+
+  <!--all products aviable start-->
+  <main class="products-main">
+    <div class="products">
+
+      <section class="js-product-container product-container ">
+        <div class="product-image-container">
+          <img class="js-product-image product-image" src="./images/products/6-piece-white-dinner-plate-set.jpg" alt="">
+        </div>
+        <div class="product-name">
+          <p>
+            Black and Gray Athletic Cotton
+            Socks - 6 Pairs
+          </p>
+        </div>
+        <div class="product-rating">
+          <p>⭐⭐⭐⭐</p>
+        </div>
+        <div class="product-price">
+          <p>$20.67</p>
+        </div>
+        <div class="product-quantity">
+          <select class="product-amount">quantity
+            <option value="1" selected>1</option>
+            <option value="1" selected>2</option>
+            <option value="1" selected>3</option>
+            <option value="1" selected>4</option>
+            <option value="1" selected>5</option>
+            <option value="1" selected>6</option>
+            <option value="1" selected>7</option>
+            <option value="1" selected>8</option>
+            <option value="1" selected>9</option>
+          </select>
+        </div>
+        <div>
+          <button class="primary-button">
+            Add to cart
+          </button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!--all products aviable end -->
+  <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
